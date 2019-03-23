@@ -48,18 +48,31 @@ else{
 // var BirhofJohn=1991;
 // var JohnAGe=CalculateAge(BirhofJohn);
 // console.log(JohnAGe);
+// var Reza={
+// 	Name:"Reza",
+// 	Famiy:"Darooei",
+// 	Age:27,
+// 	Job:"Student",
+// 	IsmARRIED:false
+// };
+
+// var Melisa=new Object();
+
+// Melisa.Age=28;
+// Melisa.Sex="Wmoan";
+// console.log(Melisa);
+
+
 var Reza={
-	Name:"Reza",
-	Famiy:"Darooei",
-	Age:27,
-	Job:"Student",
-	IsmARRIED:false
-};
-
-var Melisa=new Object();
-
-Melisa.Age=28;
-Melisa.Sex="Wmoan";
-console.log(Melisa);
-
-
+		Name:"Reza",
+		Famiy:"Darooei",
+		Age:27,
+		Job:"Student",
+		family:["ali","Hassan","Naser"],
+		IsmARRIED:false,
+		FuncAge: function(BirthYear){
+				return 2019-BirthYear;
+		}
+	};
+	
+	console.log(Reza.FuncAge(1991));
