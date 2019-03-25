@@ -63,16 +63,75 @@ else{
 // console.log(Melisa);
 
 
-var Reza={
-		Name:"Reza",
-		Famiy:"Darooei",
-		Age:27,
-		Job:"Student",
-		family:["ali","Hassan","Naser"],
-		IsmARRIED:false,
-		FuncAge: function(BirthYear){
-				return 2019-BirthYear;
-		}
-	};
+// var Reza={
+// 		Name:"Reza",
+// 		Famiy:"Darooei",
+// 		Age:27,
+// 		Job:"Student",
+// 		family:["ali","Hassan","Naser"],
+// 		IsmARRIED:false,
+// 		FuncAge: function(BirthYear){
+// 				return 2019-BirthYear;
+// 		}
+// 	};
 	
-	console.log(Reza.FuncAge(1991));
+// 	console.log(Reza.FuncAge(1991));
+
+//Loops
+// for(var i=0;i<10;i++)
+// {
+// 	console.log(i);
+
+// }
+
+// var Names=["John","Micheal","Bob","Peter","Elf"];
+// // for(var i=0;i<Names.length;i++)
+// // {
+// // 	console.log(Names[i]);
+// // }
+// for(var i=Names.length;i=>0;i--)
+// {
+// 	console.log(Names[i]);
+// }
+
+
+// var yearsOfBorn=[1991,2000,1986];
+// var Ages=[];
+// for(var i=0;i<yearsOfBorn.length;i++){
+// 	var age=2019-yearsOfBorn[i];
+// 	Ages[i]=age;
+// }
+// for(var i=0;i<Ages.length;i++){
+// 	if(Ages[i]>=18)
+// 	{
+// 		console.log(true);
+// 	}
+// }
+
+function PrintFullAge(YearsOfBorn)
+{
+	var Ages=[];
+	var Condtions=[];
+	for(var i=0;i<YearsOfBorn.length;i++)
+	{
+		var age=2019-YearsOfBorn[i];
+		Ages[i]=age;
+	}
+
+	for(var i=0;i<Ages.length;i++){
+		if(Ages[i]>=18)
+		{
+			var cond=true;
+			 Condtions[i]=cond;
+			 
+		}
+		else{
+			var cond=false;
+			 Condtions[i]=cond;
+		}
+	}
+	return Condtions;
+
+}
+
+console.log(PrintFullAge([1992,2220,1090]));
