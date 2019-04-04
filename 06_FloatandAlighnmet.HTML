@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Float And Alignmet</title>
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+
+    <style>
+        *{
+            box-sizing: border-box;
+        }
+    body{
+        font-family:"Roboto";
+        line-height: 1.6em;
+    }
+    .contanier
+    {
+        max-width: 980px;;
+        margin: auto;
+
+    }
+    .box
+    {
+        
+        border: #4f4f4f 10px solid;
+        background: rgba(0, 195, 255, 0.075);
+        border-style:solid;
+        padding: 20px;
+        margin: 10px;
+        
+    }
+    .box p{
+        text-align: center;
+        text-align: justify;
+    }
+    .box h3{
+        text-align: center;
+    }
+    #box_2{
+        float: left;
+        width: 65%;
+
+
+    }
+    #box_3{
+        float:right;
+        width: 30%;
+    }
+    </style>
+</head>
+<body>
+    <div class="contanier">
+        <div id="box_1" class="box">
+            <h3>Heading</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem cupiditate inventore tempora, quia dolorum eaque laudantium fugit! Modi, cupiditate deserunt.</p>
+        </div>
+        <div id="box_2" class="box">
+            <h3>Heading</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem cupiditate inventore tempora, quia dolorum eaque laudantium fugit! Modi, cupiditate deserunt.</p>
+        </div>
+        <div id="box_3" class="box">
+            <h3>Heading</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem cupiditate inventore tempora, quia dolorum eaque laudantium fugit! Modi, cupiditate deserunt.</p>
+        </div>
+    </div>
+</body>
+</html>
